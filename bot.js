@@ -8,7 +8,7 @@ bot.on('ready',() =>{
 	console.log('Momo is ready!');
 });
 
-bot.on('message', function(message) {
+bot.on('message', function(user, userID, channelID, message, evt) {
 	if(message.content === 'ping'){
 		message.reply('pong');
 	}

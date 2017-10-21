@@ -1,6 +1,6 @@
 var Discord = require('discord.io');
 var logger = require('winston');
-var auth = require('./auth.json');
+var bot_token;
 var func = require('./functions');
 
 const PREFIX = '<@370238406820888577>';
@@ -14,7 +14,7 @@ logger.level = 'debug';
 
 // Initialize Discord Bot
 var bot = new Discord.Client({
-   token: auth.token,
+   token: bot_token,
    autorun: true
 });
 

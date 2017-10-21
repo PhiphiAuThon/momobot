@@ -1,0 +1,11 @@
+{
+  "name": "Momo",
+  "version": "0.1",
+  "description": "MOMO IN DA HOUSE! Momo is a Pokemon gijinka (Bellsprout) created by the almighty Ryiko.",
+  "main": "bot.js",
+  "author": "PhiphiAuThon",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "winston": "^2.4.0"
+  }
+}

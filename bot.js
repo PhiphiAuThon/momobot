@@ -10,12 +10,12 @@ bot.on('ready',() =>{
 
 bot.on('message', function(user, userID, channelID, message, evt) {
 
-	message = message.split(' ');
-    if(message[0].toLowerCase() != PREFIX.toLowerCase()) return;
+	var msg = message.split(' ');
+    if(msg[0].toLowerCase() != PREFIX.toLowerCase()) return;
 
     var message_index = 0;
-    for (i = 0; i < message.length; i++) {
-    	switch (message[i].toLowerCase()){
+    for (i = 0; i < msg.length; i++) {
+    	switch (msg[i].toLowerCase()){
     		case 'panini': 
     			message_index = 1;
     			break;
@@ -44,7 +44,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 
 	//var answer ;//= //func.give_answer(message_index,user);
 
-	if(message[1] === 'ping'){
+	if(msg[1] === 'ping'){
 		message.reply('TA GUEULE PUTAIN'); //answer = 'pang';
 	}
 

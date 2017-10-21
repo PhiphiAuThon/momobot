@@ -45,7 +45,7 @@ bot.on('message', function(user, userID, channelID, message, evt) {
 	//var answer ;//= //func.give_answer(message_index,user);
 
 	if(message[1] === 'ping'){
-		message.reply(); //answer = 'pang';
+		message.reply('TA GUEULE PUTAIN'); //answer = 'pang';
 	}
 
     //bot.sendMessage({to: channelID,message: answer});

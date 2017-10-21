@@ -11,7 +11,7 @@ bot.on('ready',() =>{
 bot.on('message', function(message) {
 
 	var msg = message.split(' ');
-    if(msg[0].toLowerCase() != PREFIX.toLowerCase()) return;
+    //if(msg[0].toLowerCase() != PREFIX.toLowerCase()) return;
 
     var message_index = 0;
     for (i = 0; i < msg.length; i++) {

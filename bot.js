@@ -8,15 +8,10 @@ bot.on('ready',() =>{
 	console.log('Momo is ready!');
 });
 
-bot.on('message', function(user, userID, channelID, message, evt) {
-
-	//var answer = //func.give_answer(message_index,user);
-
+bot.on('message', function(message) {
 	if(message.content === 'ping'){
-		message.reply('pang');
+		message.reply('pong');
 	}
-
-    //bot.sendMessage({to: channelID,message: answer});
 });
 
 bot.login(process.env.BOT_TOKEN);
